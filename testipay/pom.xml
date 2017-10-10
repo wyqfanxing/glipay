@@ -9,29 +9,34 @@
 	<name>testipay</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
-	
+
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>3.8.1</version>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
+		<!--  <dependency>
 			<groupId>org.codehaus.plexus</groupId>
 			<artifactId>plexus-io</artifactId>
 			<version>1.0</version>
-		</dependency>
+		</dependency>-->
+		 <!-- <dependency>
+			<artifactId>testipay-plexus</artifactId>
+			<groupId>plexus-io</groupId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/lib/plexus-io-1.0.1.jar</systemPath>
+		</dependency> -->
 		<!-- <dependency>
-        <artifactId>testipay-plexus</artifactId>
-        <groupId>plexus-io</groupId>
-        <version>1.0</version>
-        <scope>system</scope>
-        <systemPath>${basedir}/lib/plexus-io-1.0.1.jar</systemPath>
-    </dependency> -->
+    <groupId>org.codehaus.plexus</groupId>
+    <artifactId>plexus-io</artifactId>
+    <version>1.0</version
+</dependency> -->
+		
 		
 	</dependencies>
-	
-		<properties>
+	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<jmeter.result.jtl.dir>${project.build.directory}\jmeter\results</jmeter.result.jtl.dir>
 		<jmeter.result.html.dir>${project.build.directory}\jmeter\html</jmeter.result.html.dir>
@@ -88,11 +93,10 @@
 				<source>1.8</source> <target></target> <encoding>UTF-8</encoding> <compilerArguments> 
 				<extdirs>src\test\jmeter\lib</extdirs> </compileArguments </configuration> 
 				</plugin> -->
-			<plugin>
-				<!-- https://mvnrepository.com/artifact/org.codehaus.mojo/xml-maven-plugin -->
+			<!-- <plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>xml-maven-plugin</artifactId>
-				<version>1.0-beta-3</version>
+				<version>1.0</version>
 				<executions>
 					<execution>
 						<phase>verify</phase>
@@ -126,7 +130,7 @@
 						</transformationSet>
 					</transformationSets>
 				</configuration>
-			</plugin>
+			</plugin>-->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-dependency-plugin</artifactId>
