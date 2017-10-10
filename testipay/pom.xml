@@ -9,6 +9,7 @@
 	<name>testipay</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
+	
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -20,8 +21,17 @@
 			<artifactId>plexus-io</artifactId>
 			<version>1.0</version>
 		</dependency>
+		<!-- <dependency>
+        <artifactId>testipay-plexus</artifactId>
+        <groupId>plexus-io</groupId>
+        <version>1.0</version>
+        <scope>system</scope>
+        <systemPath>${basedir}/lib/plexus-io-1.0.1.jar</systemPath>
+    </dependency> -->
+		
 	</dependencies>
-	<properties>
+	
+		<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<jmeter.result.jtl.dir>${project.build.directory}\jmeter\results</jmeter.result.jtl.dir>
 		<jmeter.result.html.dir>${project.build.directory}\jmeter\html</jmeter.result.html.dir>
