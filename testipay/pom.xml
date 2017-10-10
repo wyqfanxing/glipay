@@ -8,7 +8,6 @@
 
 	<name>testipay</name>
 	<url>http://maven.apache.org</url>
-
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -16,14 +15,12 @@
 			<version>3.8.1</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.codehaus.plexus</groupId>
+			<artifactId>plexus-io</artifactId>
+			<version>3.0.0</version>
+		</dependency>
 	</dependencies>
-	<dependency>
-		<artifactId>plexus</artifactId>
-		<groupId>com.testipay.wyq</groupId>
-		<version>1.0.1</version>
-		<scope>system</scope>
-		<systemPath>${basedir}/plexus-io-1.0.1.jar</systemPath>
-	</dependency>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<jmeter.result.jtl.dir>${project.build.directory}\jmeter\results</jmeter.result.jtl.dir>
