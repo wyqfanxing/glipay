@@ -93,7 +93,7 @@
 				<source>1.8</source> <target></target> <encoding>UTF-8</encoding> <compilerArguments> 
 				<extdirs>src\test\jmeter\lib</extdirs> </compileArguments </configuration> 
 				</plugin> -->
-			<!-- <plugin>
+			 <plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>xml-maven-plugin</artifactId>
 				<version>1.0</version>
@@ -130,7 +130,7 @@
 						</transformationSet>
 					</transformationSets>
 				</configuration>
-			</plugin>-->
+			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-dependency-plugin</artifactId>
