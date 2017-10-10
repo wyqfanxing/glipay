@@ -144,6 +144,6 @@
 			</plugin>
 
 		</plugins>
-		<defalutGoal>clean</defalutGoal>
+		
 	</build>
 </project>
